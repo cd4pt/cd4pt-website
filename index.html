@@ -1,30 +1,64 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://unpkg.com/ress@1.2.2/dist/ress.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/common.min.css">
+    <link rel="stylesheet" href="./style/cd4pt.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <title>CD4PT 公共交通のための運行情報共通データフォーマット</title>
 </head>
+
 <body>
     <div class="root">
-        <div class="bigheader">
-            <div class="logo">
-                <h1 class="logo-en">CD4PT</h1>
-                <h3 class="fullname-en">Common Data Format for Public Transportation</h3>
-                <h2 class="fullname-ja">公共交通のための<br>運行情報共通データフォーマット</h2>
-                <div class="join-button">
-                    <a href="https://github.com/cd4pt"><i class="fab fa-github"></i> GitHubで参加する</a>
+        <section class="cd4pt-lato cd4pt-bg-green text-white flex justify-center flex-col px-4 py-20 lg:px-20">
+            <h1 class="logo-en">CD4PT</h1>
+            <h3 class="fullname-en">Common Data Format for Public Transportation</h3>
+            <h2 class="fullname-ja"><span class="nobreak">公共交通のための</span><br><span class="nobreak">運行情報</span><span class="nobreak">共通データフォーマット</span></h2>
+        </section>
+        <section>
+            <h2 class="text-center text-grey-darkest m-5 text-3xl">
+                <span class="cd4pt-underline-green">MaaS時代のための交通情報フォーマット</span>
+            </h2>
+            <div class="flex justify-center flex-col lg:flex-row">
+                <div class="flex-1 sm:flex-grow text-grey-darkest text-center px-4 py-1 mx-5 my-1">
+                    <div class="text-5xl"><i class="fas fa-code-branch"></i></div>
+                    <h3 class="text-center text-grey-darkest m-2 text-xl">オープンな規格</h3>
+                    <span class="text-grey-darkest text-lg">自治体、交通事業者、ソフトウェア企業、データサイエンティスト、個人開発者、交通機関の利用者…… どのような立場であれ、交通データを利活用する方であれば規格への提案が可能です。</span>
+                </div>
+                <div class="flex-1 sm:flex-grow text-grey-darkest text-center px-4 py-1 mx-5 my-1">
+                        <div class="text-5xl"><i class="fas fa-bus-alt"></i></div>
+                        <h3 class="text-center text-grey-darkest m-2 text-xl">既存規格との互換性</h3>
+                        <span class="text-grey-darkest text-lg">既にバス業界を中心に広く利用されているGTFS/GTFS-JPなど、既存の規格への変換を標準でサポートする事を前提とした設計を行います。</span>
+                </div>
+                <div class="flex-1 sm:flex-grow text-grey-darkest text-center px-4 py-1 mx-5 my-1">
+                        <div class="text-5xl"><i class="fas fa-bicycle"></i></div>
+                        <h3 class="text-center text-grey-darkest m-2 text-xl">全ての交通機関のために</h3>
+                        <span class="text-grey-darkest text-lg">全ての交通機関がシームレスに繋がる時代だからこそ、鉄道やバスだけでなく、いままでオープンデータ化が進まなかった航空便や、カーシェア・シェアサイクル・ライドシェアといった新たな交通機関も規格レベルでサポートします。</span>
                 </div>
             </div>
-        </div>
-        <div class="contents">
-            
-        </div>
+        </section>
+
+        <section>
+                <h2 class="text-center text-grey-darkest m-5 text-3xl">
+                    <span class="cd4pt-underline-green">規格策定への参加方法</span>
+                </h2>
+                <div class="flex justify-center flex-col lg:flex-row">
+                    <div class="sm:flex-grow text-grey-darkest text-center px-4 py-1 mx-5 my-1 w-auto lg:w-1/2">
+                        <a href="https://github.com/cd4pt">
+                        <div class="text-5xl text-grey-darkest"><i class="fab fa-github"></i></div>
+                       <h3 class="text-center text-grey-darkest m-2 text-xl">GitHub</h3></a>
+                       <span class="text-grey-darkest text-lg">GitHubリポジトリのIssueにて議論を行っております。ご参加お待ちしております。</span>
+                    </div>
+                </div>
+            </section>
+
     </div>
 </body>
+
 </html>
